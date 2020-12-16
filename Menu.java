@@ -9,7 +9,6 @@ public class Menu{
     String charType; 
     String yesorno; 
 
-
     //file set up
     public void fileSetup(){
         Scanner inUser = new Scanner(System.in); 
@@ -114,12 +113,16 @@ public class Menu{
                 }
             }else{
                 System.out.println("Error");  
-            }
-
+            } 
         }else if(ans==2){
             //validate a save
         }else if(ans==3){
 
+            //I genuinly have no idea how to solve this error - stack overflow did not help at all :/
+           char1.completeRandom(); 
+           char2.completeRandom(); 
+           char2.completeRandom();
+           char2.completeRandom();
         }else if(ans ==4){
             user.close(); 
             System.exit(1); 
