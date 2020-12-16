@@ -66,13 +66,13 @@ public class Char{
         } 
     } 
 
+    public void completeRandom(){
+
+    }
+
     public String toString() {
+        //I realize the order is wrong, to be fixed later
         return charType + "," + charName + "," + strength + "," + toughness + ","+ intelligence + "," + magic + "," + influence ;
     }
 }
 
-// Knight - Strength
-// Peasant - Toughness
-// Cleric - Intelligence
-// Mage - Magic
-// Courtier - Influence
