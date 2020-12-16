@@ -8,12 +8,9 @@ public class Main{
 
         Menu menu = new Menu(); 
         menu.showMenu();
-        Char char1 = new Char();   
-        Char char2 = new Char();  
+       
 
        
     }
 
-
-   
 }
