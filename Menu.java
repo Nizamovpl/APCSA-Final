@@ -71,13 +71,11 @@ public class Menu{
         Scanner scanner = new Scanner(name);
         Scanner user2 = new Scanner(System.in); 
         String isTerminate; 
-
-        while(){
-            
-        }        
-
+        
+        //need to have code that checks the first line seperatly
+        
         while(name.hasNext()){
-            if(scanner.nextLine().split(",").length != 7){
+            if(scanner.nextLine().split(",").length != 7  ){
                 System.out.println("File erronoeus Wiping file.  Press x to abort"); 
                 isTerminate = user2.next(); 
                 if(isTerminate == "x" ){
