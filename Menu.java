@@ -61,7 +61,37 @@ public class Menu{
      
     }
 
-  
+    public void isEmpty(){
+        if (name.length() == 0){
+            System.out.println("File is empty");
+        } 
+    }
+
+    public void isFormatted(){
+        Scanner scanner = new Scanner(name);
+        Scanner user2 = new Scanner(System.in); 
+        String isTerminate; 
+
+        while(){
+            
+        }        
+
+        while(name.hasNext()){
+            if(scanner.nextLine().split(",").length != 7){
+                System.out.println("File erronoeus Wiping file.  Press x to abort"); 
+                isTerminate = user2.next(); 
+                if(isTerminate == "x" ){
+                    System.exit(1); 
+                }
+                FileWriter fw = new FileWriter(name); 
+                PrintWriter pw = new PrintWriter(fw); 
+                pw.flush();
+                pw.close();
+                fw.close();
+            } 
+        }
+    }
+
     //the big boy of things - the chonkster menu
     public void showMenu(){
         System.out.println("Press 1 to create a new game" + "\n" + "press 2 to validate a save" + "\n" + "press 3 to randomize" + "\n" + "press 4 to quit" ); 
@@ -115,16 +145,18 @@ public class Menu{
                 System.out.println("Error");  
             } 
         }else if(ans==2){
-            //validate a save
+            isEmpty();
+            isFormatted();
         }else if(ans==3){
 
-            //I genuinly have no idea how to solve this error - stack overflow did not help at all :/
+            //I genuinly have no idea how to solve this error - the internet did not help at all :/
            char1.completeRandom(); 
            char2.completeRandom(); 
            char2.completeRandom();
            char2.completeRandom();
         }else if(ans ==4){
             user.close(); 
+            System.out.println("Quitting"); 
             System.exit(1); 
         }else{
             System.out.println("please enter a valid input"); 

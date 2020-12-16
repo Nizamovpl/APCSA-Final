@@ -24,6 +24,7 @@ public class Char{
                 intelligence = random.nextInt(6);
                 magic = random.nextInt(6);
                 influence = random.nextInt(6);
+                total = toughness + strength + intelligence + magic + influence; 
             }
           
         }else if(charType == "Knight"){
@@ -34,6 +35,7 @@ public class Char{
                 intelligence = random.nextInt(6);
                 magic = random.nextInt(6);
                 influence = random.nextInt(6);
+                total = toughness + strength + intelligence + magic + influence;
             }  
 
         }else if(charType == "Cleric"){
@@ -43,6 +45,7 @@ public class Char{
                 magic = random.nextInt(6);
                 strength = random.nextInt(6);
                 influence = random.nextInt(6);
+                total = toughness + strength + intelligence + magic + influence;
             }  
         }else if(charType == "Mage"){
             while(total <= 28 && total > 8){
@@ -51,6 +54,7 @@ public class Char{
                 intelligence = random.nextInt(6);
                 strength = random.nextInt(6);
                 influence = random.nextInt(6);
+                total = toughness + strength + intelligence + magic + influence;
             }
         }else if(charType == "Courtier"){
             while(total <= 28 && total > 8){
@@ -59,6 +63,7 @@ public class Char{
                 intelligence = random.nextInt(6);
                 strength = random.nextInt(6);
                 magic = random.nextInt(6);
+                total = toughness + strength + intelligence + magic + influence;
             }
          
         }else{
@@ -92,6 +97,7 @@ public class Char{
                 intelligence = random.nextInt(6);
                 magic = random.nextInt(6);
                 influence = random.nextInt(6);
+                total = toughness + strength + intelligence + magic + influence;
             }
           
         }else if(charType == "Knight"){
@@ -102,6 +108,7 @@ public class Char{
                 intelligence = random.nextInt(6);
                 magic = random.nextInt(6);
                 influence = random.nextInt(6);
+                total = toughness + strength + intelligence + magic + influence;
             }  
 
         }else if(charType == "Cleric"){
@@ -111,6 +118,7 @@ public class Char{
                 magic = random.nextInt(6);
                 strength = random.nextInt(6);
                 influence = random.nextInt(6);
+                total = toughness + strength + intelligence + magic + influence;
             }  
         }else if(charType == "Mage"){
             while(total <= 28 && total > 8){
@@ -119,6 +127,7 @@ public class Char{
                 intelligence = random.nextInt(6);
                 strength = random.nextInt(6);
                 influence = random.nextInt(6);
+                total = toughness + strength + intelligence + magic + influence;
             }
         }else if(charType == "Courtier"){
             while(total <= 28 && total > 8){
@@ -127,6 +136,7 @@ public class Char{
                 intelligence = random.nextInt(6);
                 strength = random.nextInt(6);
                 magic = random.nextInt(6);
+                total = toughness + strength + intelligence + magic + influence;
             }
          
         }else{
