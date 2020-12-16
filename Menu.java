@@ -7,6 +7,7 @@ public class Menu{
     String name;
     String charName; 
     String charType; 
+    String yesorno; 
 
 
     //file set up
@@ -61,6 +62,7 @@ public class Menu{
      
     }
 
+  
     //the big boy of things - the chonkster menu
     public void showMenu(){
         System.out.println("Press 1 to create a new game" + "\n" + "press 2 to validate a save" + "\n" + "press 3 to randomize" + "\n" + "press 4 to quit" ); 
@@ -83,13 +85,43 @@ public class Menu{
             charInit();
             Char char4 = new Char(charName, charType); 
             char4.random(charType);
-          
+
+            String CharStatsTotal = (char1.toString() + "\n" + char2.toString() + "\n" + char3.toString() + "\n" + char4.toString());
+
+            System.out.println(CharStatsTotal); 
+            System.out.println("Are you happy with your characters"); 
+            yesorno = user.next();
+            while(yesorno != "Yes" || yesorno != "No" ){
+                System.out.println("plese enter a valid answer - make sure to capatalize the first lettre");
+                yesorno = user.next(); 
+            }
+
+            while(yesorno != "Yes"){
+                char1.random(charType);
+                char2.random(charType);
+                char3.random(charType);
+                char4.random(charType);
+                System.out.println("Are you happy with your characters"); 
+            }
+            if(yesorno == "Yes"){
+                try{
+                    FileWriter fw = new FileWriter(CharStatsTotal);
+                    fw.write(CharStatsTotal);    
+                    fw.close();     
+                }catch(IOException e){
+                    System.out.println("Error");    
+                    e.printStackTrace();
+                }
+            }else{
+                System.out.println("Error");  
+            }
 
         }else if(ans==2){
             //validate a save
         }else if(ans==3){
-            //randomize
+
         }else if(ans ==4){
+            user.close(); 
             System.exit(1); 
         }else{
             System.out.println("please enter a valid input"); 
