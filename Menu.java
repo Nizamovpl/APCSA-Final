@@ -5,21 +5,9 @@ public class Menu{
     boolean run = true; 
     Scanner user = new Scanner(System.in); 
     String name;
-    
-
     String charName; 
     String charType; 
-    // //char names
-    // String c1; 
-    // String c2; 
-    // String c3; 
-    // String c4; 
 
-    // //char types
-    // String c1Type; 
-    // String c2Type; 
-    // String c3Type;
-    // String c4Type; 
 
     //file set up
     public void fileSetup(){
@@ -85,13 +73,16 @@ public class Menu{
             //class initialization of Char
             charInit();
             Char char1 = new Char(charName, charType); 
+            char1.random(charType);
             charInit();
             Char char2 = new Char(charName, charType); 
+            char2.random(charType);
             charInit();
             Char char3 = new Char(charName, charType); 
+            char3.random(charType);
             charInit();
             Char char4 = new Char(charName, charType); 
-
+            char4.random(charType);
           
 
         }else if(ans==2){
