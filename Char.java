@@ -7,7 +7,7 @@ public class Char{
     private int charNum; 
     private int total = 0; 
     Random random = new Random(); 
-    //constructur
+    //constructer
 
     public Char(String charName, String charType){
        this.charName = charName; 
